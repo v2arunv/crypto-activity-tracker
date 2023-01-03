@@ -13,7 +13,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0btoken.proto\"?\n\tTokenInfo\x12\x14\n\x0c\x64\x65\x63imal_size\x18\x01 \x01(\x05\x12\x0e\n\x06symbol\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\",\n\x0bTransaction\x12\x0e\n\x06\x61mount\x18\x01 \x01(\x02\x12\r\n\x05token\x18\x02 \x01(\t\"L\n\x13GetTokenInfoRequest\x12\x1f\n\nblockchain\x18\x01 \x01(\x0e\x32\x0b.Blockchain\x12\x14\n\x0ctoken_symbol\x18\x02 \x01(\t\"h\n\x14GetTokenInfoResponse\x12\x1e\n\ntoken_info\x18\x01 \x01(\x0b\x32\n.TokenInfo\x12&\n\x05\x65rror\x18\x02 \x01(\x0e\x32\x12.ResponseErrorTypeH\x00\x88\x01\x01\x42\x08\n\x06_error*@\n\nBlockchain\x12\x17\n\x13\x42INANCE_SMART_CHAIN\x10\x00\x12\x0c\n\x08\x45THEREUM\x10\x01\x12\x0b\n\x07POLYGON\x10\x02*\"\n\x11ResponseErrorType\x12\r\n\tNOT_FOUND\x10\x00\x32H\n\x0cGetTokenInfo\x12\x38\n\tTokenInfo\x12\x14.GetTokenInfoRequest\x1a\x15.GetTokenInfoResponseb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0btoken.proto\"?\n\tTokenInfo\x12\x14\n\x0c\x64\x65\x63imal_size\x18\x01 \x01(\x05\x12\x0e\n\x06symbol\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\",\n\x0bTransaction\x12\x0e\n\x06\x61mount\x18\x01 \x01(\x02\x12\r\n\x05token\x18\x02 \x01(\t\"L\n\x13GetTokenInfoRequest\x12\x1f\n\nblockchain\x18\x01 \x01(\x0e\x32\x0b.Blockchain\x12\x14\n\x0ctoken_symbol\x18\x02 \x01(\t\"h\n\x14GetTokenInfoResponse\x12\x1e\n\ntoken_info\x18\x01 \x01(\x0b\x32\n.TokenInfo\x12&\n\x05\x65rror\x18\x02 \x01(\x0e\x32\x12.ResponseErrorTypeH\x00\x88\x01\x01\x42\x08\n\x06_error*@\n\nBlockchain\x12\x17\n\x13\x42INANCE_SMART_CHAIN\x10\x00\x12\x0c\n\x08\x45THEREUM\x10\x01\x12\x0b\n\x07POLYGON\x10\x02*\"\n\x11ResponseErrorType\x12\r\n\tNOT_FOUND\x10\x00\x32O\n\x10TokenInfoService\x12;\n\x0cGetTokenInfo\x12\x14.GetTokenInfoRequest\x1a\x15.GetTokenInfoResponseb\x06proto3')
 
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, globals())
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'token_pb2', globals())
@@ -32,6 +32,6 @@ if _descriptor._USE_C_DESCRIPTORS == False:
   _GETTOKENINFOREQUEST._serialized_end=202
   _GETTOKENINFORESPONSE._serialized_start=204
   _GETTOKENINFORESPONSE._serialized_end=308
-  _GETTOKENINFO._serialized_start=412
-  _GETTOKENINFO._serialized_end=484
+  _TOKENINFOSERVICE._serialized_start=412
+  _TOKENINFOSERVICE._serialized_end=491
 # @@protoc_insertion_point(module_scope)
