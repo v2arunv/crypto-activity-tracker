@@ -31,6 +31,6 @@ message GetTokenInfoResponse {
 	optional ResponseErrorType error =2;
 }
 
-service GetTokenInfo {
-	rpc TokenInfo  (GetTokenInfoRequest) returns (GetTokenInfoResponse);
+service TokenInfoService{
+	rpc GetTokenInfo  (GetTokenInfoRequest) returns (GetTokenInfoResponse);
 }
