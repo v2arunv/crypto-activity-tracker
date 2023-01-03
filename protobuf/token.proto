@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+enum Blockchain {
+	BINANCE_SMART_CHAIN = 0;
+	ETHEREUM = 1;
+	POLYGON = 2;
+}
+
+enum ResponseErrorType {
+	NOT_FOUND = 0;
+}
+
+message TokenInfo {
+	int32 decimal_size = 1;
+	string symbol = 2;
+	string name = 3;
+}
+
+message Transaction {
+	float amount = 1;
+	string token = 2;
+}
+
+message GetTokenInfoRequest {
+	Blockchain blockchain = 1;
+	string token_symbol = 2;
+}
+
+message GetTokenInfoResponse {
+	TokenInfo token_info = 1;
+	optional ResponseErrorType error =2;
+}
+
+service GetTokenInfo {
+	rpc TokenInfo  (GetTokenInfoRequest) returns (GetTokenInfoResponse);
+}
