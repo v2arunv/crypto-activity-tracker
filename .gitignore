@@ -134,3 +134,4 @@ dmypy.json
 # Java/Kotlin
 api/build/**
 api/.gradle/**
+api/**/generated/**
